@@ -14,6 +14,16 @@
         </div>
       </div>
       <div v-if="LIST_ID == 2" class="question-result__container">
+        <img
+          src="https://i.gifer.com/XqyP.gif"
+          alt="gif"
+          class="question-result__gif question-result__gif_first"
+        />
+        <img
+          src="https://i.gifer.com/XiPu.gif"
+          alt="gif"
+          class="question-result__gif question-result__gif_second"
+        />
         <p class="question-result__title">
           (☞ﾟヮﾟ)☞ Ваш результат: 👌 ☜(ﾟヮﾟ☜)
         </p>
@@ -54,6 +64,20 @@ export default {
 </script>
 <style lang="scss" scoped>
 .question-result {
+  &__container {
+    position: relative;
+  }
+  &__gif {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-40%);
+    &_first {
+      left: 3%;
+    }
+    &_second {
+      right: 3%;
+    }
+  }
   &__title {
     font-weight: 700;
     font-size: 24px;

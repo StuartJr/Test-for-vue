@@ -18,11 +18,6 @@ export default {
     QuestionItem,
     QuestionResult,
   },
-  data() {
-    return {
-      selectedList: [],
-    };
-  },
   methods: {
     ...mapActions(["SEARCH_MAX_NUMBER_ACTIONS"]),
   },
